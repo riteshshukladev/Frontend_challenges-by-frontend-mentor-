@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+*
+{
+    padding: 0;
+    margin: 0;
+
+}
+:root{
+--Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+--Dark-cyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+}
+body
+{
+  
+    background-color:hsl(30, 38%, 92%);
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+.container
+{
+    margin:50px auto;
+    max-width: 600px;
+}
+.card
+{
+    
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color:var(--White); 
+
+}
+.image img
+{
+    border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+    width: 100%;
+    height: 100%;
+    
+}
+.card-content
+{
+    padding: 30px 30px;
+    
+
+}
+.main-heading
+{
+    padding: 5px 0px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color:var(--Dark-grayish-blue);
+    font-size: 12px;
+}
+.main-paragraph
+{
+    padding: 25px 0px;
+    text-transform: capitalize;
+    font-family: 'Fraunces', serif;
+    font-size: 37px;
+}
+.description
+{
+    padding-bottom: 30px;
+    color:var(--Dark-grayish-blue);
+}
+.price
+{
+    display: flex;
+    padding-bottom: 35px;
+    align-items: center;
+}
+.current-price{
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+    color:var(--Dark-cyan);
+    padding-right: 25px;
+}
+.old-price
+{
+    color:var(--Dark-grayish-blue) ;
+
+}
+button{
+    padding: 15px 60px;
+    background-color:var(--Dark-cyan) ;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.5s ease-in;
+}
+button img
+{
+    padding: 0px 7px;
+}
+button p
+{
+    color: var(--White);
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+button:hover{
+    background-color:hsl(158, 47%, 17%);
+    cursor: pointer;
+}
+/* Responsive Designing */
+@media only screen and (max-width:620px)
+{
+    .card{
+        grid-template-columns: 1fr;
+    } 
+   .image img{
+    max-height: 250px;
+    max-width: 100%;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+   }
+   .container{
+    padding: 10px;
+   }
+   .card-content{
+    padding: 20px 20px;
+   }
+   .main-heading{
+    padding: 2px 0px;
+   }
+   .main-paragraph{
+    padding: 10px 0px;
+   }
+   .price{
+    padding-bottom: 10px;
+   }
+   button{
+    padding: 15px 90px;
+    display: flex;
+    margin: 0px auto;
+   }
+}
+
+@media only screen and (max-width:375px){
+    .image img{
+        max-height: 200px;
+        width: 100%;
+    }
+    .main-heading{
+        font-size: 10px;
+    }
+    .main-paragraph{
+        font-size: 25px;
+    }
+    .description
+    {
+        font-size: 13px;
+    }
+    .current-price{
+        font-size: 27px;
+    }
+    button{
+        padding: 10px 80px;
+    }
+    button p{
+        font-size: 13px;
+    }
+}
