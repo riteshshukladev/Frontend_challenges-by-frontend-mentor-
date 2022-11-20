@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root{
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 64%, 45%);
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        
+    }
+    body{
+        min-height: 100vh;
+        background:url(/images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        background-color: var(--Pale-blue);
+        font-family: 'Red Hat Display', sans-serif;
+       
+    }
+    .container
+    {
+       border-radius: 30px;
+        max-width: 360px;
+        margin: 50px auto;
+       
+    }
+    
+    
+    .image{
+       
+    }
+    
+    .image img{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display:flex;
+        max-width: 100%;
+        max-height: 100%;
+        
+    }
+    .text{
+        background-color: var(--Very-pale-blue);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        text-align: center;
+        padding: 40px 40px;
+    }
+    .main-heading{
+       color: var(--Dark-blue);
+       padding-bottom: 15px;
+    }
+    .main-text{
+        color: var(--Desaturated-blue);
+        font-size: 16px;
+        padding: 0px 7px 20px 7px;
+    }
+    .plan-box
+     {
+        display: flex;
+         align-items: center;
+         justify-content: space-between;
+         background-color: hsl(225, 52%, 88%);
+         border-radius: 10px;
+         padding: 15px;
+         width: 100%;
+        height: 100%;
+        margin-bottom: 25px;
+
+    }
+    .plan-box-img-and-text
+    {
+        display: flex;
+        align-items: center;
+    }
+    .plan-box-img-and-text img{
+        padding:0px 10px;
+        
+    }
+    .plan-box-img-and-text h5{
+        font-weight: 900;
+        padding: 5px 0px;
+    }
+    .plan-box a{
+        color: var(--Bright-blue);
+        font-weight: 900;
+        font-size: small;
+        padding: 0px 10px;
+    }
+    .payment{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .proceed-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--Bright-blue);
+        border-radius: 10px;
+        padding: 10px 120px;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+        transition: background-color 0.5s ease-in-out;
+
+    }
+    .proceed-btn p{
+      
+        font-weight: 500;
+        font-size: 15px;
+        color: white;
+
+    }
+    .cancel-button{
+        text-decoration: none;
+        color:var(--Desaturated-blue);
+        font-weight: 600;
+    }
+
+    /* active states */
+    .plan-box a:hover{
+        text-decoration: none;
+        color:hsl(245, 71%, 61%);
+        cursor: pointer;
+    }
+    .proceed-btn:hover{
+        background-color: hsl(245, 71%, 61%);
+        cursor: pointer;
+    }
+    .cancel-button:hover{
+        cursor: pointer;
+        color: var(--Dark-blue);
+    }
+    /* utility class */
+    .textarea{
+        color: var(--Desaturated-blue);
+        font-size: 16px;
+    }
+
+    /* responsive design */
+    @media only screen and (max-width:426px) {
+
+        body{
+            background-image: url(/images/pattern-background-mobile.svg);
+            font: 14px;
+        }
+        .container{
+            padding: 20px;
+            max-width: 80%;
+        }
+        .text{
+            padding: 30px 30px;
+        }
+        .main-heading{
+            font-size: 23px;
+        }
+        .main-text{
+            font-size: 15px;
+        }
+        .plan-box{
+            padding: 12px;
+        }
+        .plan-box-img-and-text img{
+            padding:0px 3px 0px 2px;
+        }
+        .plan-box-img-and-text h5{
+            font-size: 13px;
+            padding:2px 0px ;
+        }
+        .plan-box-img-and-text p{
+            font-size: 13px;
+        }
+        .plan-box a{
+            font-size: 12px;
+        }
+        .payment{
+            
+        }
+        .proceed-btn{
+            padding: 5px 100px;
+            margin-bottom: 20px; 
+        }
+        .proceed-btn p{
+            font-size: 13px;
+            font-weight: 500;
+        }
+        .cancel-button{
+            font-size: 13px;
+        }
+    }
