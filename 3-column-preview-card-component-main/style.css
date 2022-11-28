@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+--Transparent-white: hsla(0, 0%, 100%, 0.75); /*(paragraphs)*/
+--Very-light-gray: hsl(0, 0%, 95%);/* (background, headings, buttons) */
+}
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Lexend Decaer;', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f5f5f5;
+}
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 1080px;
+}
+/* Utility classes */
+.first{
+    background-color: var(--Bright-orange);
+}
+.second{
+    background-color:var(--Dark-cyan);
+}
+.third{
+    background-color:var(--Very-dark-cyan);
+}
+/*  */
+.box{
+    padding: 40px 45px;
+}
+.box img{
+    padding-bottom: 35px;
+}
+.text h2{
+    color: var(--Very-light-gray);
+    padding-bottom: 35px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.text p{
+    color: var(--Transparent-white);
+    padding-bottom: 30px;
+    
+    font-size: 17px;
+    font-weight: lighter;
+    
+}
+/* button design */
+button{
+    margin-top: 50px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 26px;
+    padding-right: 26px;
+    border-radius: 20px;
+    border: none;
+    font-weight: 10px;
+    cursor: pointer;
+    border: 2px solid white;
+}
+.first button{
+   color: var(--Bright-orange);
+}
+.second button{
+    color: var(--Dark-cyan);
+}
+.third button{
+    color: var(--Very-dark-cyan);
+}
+/* active state */
+button:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
